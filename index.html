@@ -9,7 +9,7 @@
     
     @font-face {
       font-family: 'GraphikLCG';
-      src: url('https://test-email6786798.000webhostapp.com/fonts/GraphikLCG-Regular.ttf');
+      src: url('./fonts/GraphikLCG-Regular.ttf');
       //src: local('☺'), url('./fonts/GraphikLCG.woff') format('woff'), url('./fonts/GraphikLCG.ttf') format('truetype'), url('./fonts/GraphikLCG.svg') format('svg');
       font-weight: normal;
       font-style: normal;
@@ -69,15 +69,23 @@
     }
 
     .header-td {
-      padding-top: 56px;
+      padding-top: 50px;
     }
 
     .menu .red {
       color: #F10D48;
     }
 
+    .respons {
+      display: none;
+    }
+
     .title-td {
       padding-top: 55px;
+    }
+
+    .item {
+      padding-left: 57px
     }
 
     .title-inline td {
@@ -100,7 +108,9 @@
     .banner-1 {
       padding-top: 38px;
     }
-
+    .title-first {
+      padding-top: 30px;
+    }
     .header-1 {
       font-size: 45px;
       line-height: 41px;
@@ -161,10 +171,27 @@
       padding-top: 10px;
     }
 
+    .block-td {
+      padding-top: 0px !important;
+    }
+
+    .block-td .left {
+      padding-right: 20px;
+    }
+
+    .block-td .right {
+      padding-left: 20px;
+    }
+
+    .left a img, .right a img{
+        padding-bottom: 120px;
+      }
+
     .name {
       font-size: 11px;
       line-height: 16px;
       letter-spacing: 1.4px;
+      padding-top: 25px;
     }
 
     .price {
@@ -220,58 +247,231 @@
       color: #ffffff;
       text-decoration: none;
     }
+    .banner-mobile, .banner-mobile-2 {
+      display: none;
+    }
+    .footer-mobile {
+      display: none;
+    }
 
     @media (max-width: 820px) {
       .table-800 {
-        width: 600px !important;
+        width: 620px !important;
       }
       
       .table-580 {
-        width: 600px !important;
+        width: 550px !important;
       }
       .no_mobile {
         display: none !important;
+      }  
+      .respons {
+        display: table-cell !important;
+      }      
+      .desctop {
+        display: none !important;
       }
-      
-      /* .table-580 tr {
-        margin: 0 auto !important;
-        max-width: 580px;
-        width: 100%;
-      } */
-      .menu {
-        display: table-footer-group; 
-        margin: 0 auto !important;                             
-      }
-      .menu td {
-        max-width: 580px;
-        width: 100%
-      }
-      .logo {
-        display: table-header-group; 
-        margin: 0 auto !important;             
-      }
-      .logo img, {
-        margin: 0 auto !important;
+      .desctop .menu {
+        padding-top: 25px !important;
       }
 
-      
-            
+      .header-td {
+        padding-top: 30px !important;
+      }      
+      .menu td {
+        padding-right: 15px;
+      }
+      .menu td:last-child {
+        padding-right: 0px !important;
+      }  
+      .menu {
+        padding-top: 22px !important;
+      }
+      .title-td {
+        padding-top: 40px !important;
+      }
+      .block-td {
+        display: block !important;
+        width: 100%;
+      }
+      .block-td .right, .block-td .left {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        text-align: center !important;
+      }
+      .description-3 p br {
+        display: none !important;
+      }
+      .left a img{
+        padding-bottom: 20px !important;
+      }
+      .left, .right {
+        text-align: center !important;
+      }
+      .block-td:last-child {
+        padding-top: 30px !important;
+      }
+      .block-td .main {
+        padding-top: 0px !important;
+      }
+      .block-td:first-child .main {
+        padding-top: 30px !important;
+      }
+      ..block-td .main:first-child img {
+        padding-top: 30px !important;
+      }
+      .name {
+        text-align: center !important;
+      }
+      .block-td a {
+        display: none !important;    
+      }
+      .block-td:last-child .price {
+        padding-bottom: 70px !important;
+      }
     }
 
     @media (max-width: 620px) {
       .table-800 {
         width: 400px !important;
-      }
-      
+      }      
       .table-580 {
         width: 320px !important;
       }
-
       .block-td {
         display: block !important;
+        width: 100%;
       }
+      .banner-1, .banner-2 {
+        display: none !important;        
+      }
+      .banner-mobile {
+        display: table-cell !important;
+        height: 347px !important;
+        padding-top: 20px !important;
+      }
+      .banner-mobile-2 {
+        display: table-cell !important;
+        padding-top: 10px !important;        
+      }
+      .banner-mobile-2 img {
+        height: 210px !important;
+        width: 280px !important;
+      } 
+      .header-1 {
+        font-size: 30px !important;
+        line-height: 23px !important;
+      }
+      .item {
+        padding-left: 45px !important;
+        width: 24px !important;
+      }
+      .title-inline td:first-child {
+        width: 20px !important;
+      }
+      .title-inline td:nth-child(2) {
+        width: 25px !important;
+      }
+      .title-inline td:nth-child(3) {
+        width: 25px !important;
+      }
+      .title-inline td:nth-child(4) {
+        width: 24px !important;
+      }
+      .title-inline td:nth-child(5) {
+        width: 27px !important;
+      }
+      .title-inline td:nth-child(6) {
+        width: 34px !important;
+      }
+      .title-inline td:nth-child(7) {
+        width: 20px !important;
+        padding-top: 2px !important;
+      }
+      .subtitle-inline {
+        padding-top: 0px !important;
+      }
+      .title-first {
+      padding-top: 29px !important;
     }
-
+    .description-td p {
+      font-size: 16px !important;
+      line-height: 21px !important;
+      width: 254px !important;
+    }
+    .description-td p br {
+      display: none !important;
+    }
+    .subtitle-2 {
+      padding-top: 78px !important;
+    }
+    .subtitle-2 p {
+      font-size: 11px !important;
+    }
+    .header-2 {
+      padding-top: 0px !important;
+    }
+    .header-2  p{
+      font-size: 25px !important;
+      line-height: 32px !important;
+      padding-top: 3px !important;
+      width: 270px !important;
+    }
+    .header-2 p br {
+      display: none !important;
+    }
+    .description-2 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    padding-top: 20px !important;
+    }
+    .description-2 p {
+      text-align: center !important;
+      width: 270px !important;
+    }
+    .description-2 p br {
+      display: none !important;
+    }
+    .subtitle-3 {
+      font-size: 11px !important;
+      line-height: 14px !important;
+      padding-top: 68px;
+    }
+    .header-3 {
+      font-size: 25px !important;
+      line-height: 32px !important;
+      padding-top: 5px !important;
+    }
+    .description-3 {
+      font-size: 16px !important;
+      line-height: 23px !important;
+      padding-top: 14px !important;
+    }
+    .description-3 p br {
+      display: none !important;
+    }
+    .block-td .main {
+      width: 200px !important;
+      height: 200px !important;
+      padding-left: 39px !important;
+    }
+    .description-4 p {
+      width: 250px !important;
+    }
+    .description-4 p br {
+      display: none !important;
+    }
+    .name {
+    font-size: 10px !important;    
+    padding-top: 11px !important;
+    }
+    /* .desc {
+      display: none !important;
+    }
+    .footer-mobile {
+      display: table-cell !important;
+    } */
+  }
     @media (max-width: 340px) {
       .table-800 {
         width: 340px !important;
@@ -294,7 +494,7 @@
 
 <body style="margin: 0; padding: 0;">
   <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">
-    Тестовое письмо
+    Евгений Куликов
   </div>
   <table bgcolor="#fffffff" cellpadding="0" cellspacing="0" width="100%">
     <tr>
@@ -302,17 +502,46 @@
         <!--[if (gte mso 9)|(IE)]>
 <table width="800" align="center"><tr><td style="padding-top:0; padding-bottom:0; padding-right:0; padding-left:0; margin:0px;">
 <![endif]-->
-        <table bgcolor="#ffffff" align="center" cellpadding="0" cellspacing="0" class="main table-800" style="width:100%; max-width: 800px; border: 0;">
-          <tr>
-            <td>
-              <table bgcolor="#ffffff" align="center" cellpadding="0" cellspacing="0" class="table-580" style="max-width: 580px; width: 100%;">
-                <td height="60" width="800"></td>
-          </tr>
+        <table bgcolor="#ffffff" align="center" cellpadding="0" cellspacing="0" class="main table-800" style="width:100%; max-width: 800px; border: 0;">          
           <tr>
             <td bgcolor="#FFFFFF" class="header-td">
-              <table align="center" cellpadding="0" cellspacing="0" width="580">
+              <table class="table-580" align="center" cellpadding="0" cellspacing="0" width="580">
+                <tr>
+                  <td align="center" class="logo respons">
+                    <img align="center" width="24px" heigth='25px' alt="logo" src="https://test-email6786798.000webhostapp.com/img/logo.png" style="max-width:24px;height:auto;"/>
+                  </td>
+                </tr>
+                <tr>
+                  <td align="center" class="menu respons" >
+                    <table cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          <a href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">новинки</a>
+                        </td>
+                        <td>
+                          <a href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">азия</a>
+                        </td>
+                        <td>
+                          <a href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">уход</a>
+                        </td>
+                        <td class="no_mobile">
+                          <a href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">макияж</a>
+                        </td>
+                        <td class="no_mobile">
+                          <a href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">парфюм</a>
+                        </td>
+                        <td>
+                          <a href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">бренды</a>
+                        </td>
+                        <td>
+                          <a class="red" href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">распрадажа</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>                
                 <tr>                  
-                  <td align="left" class="menu" >
+                  <td align="left" class="menu desctop" >
                     <table cellpadding="0" cellspacing="0">
                       <tr>
                         <td>
@@ -339,7 +568,7 @@
                       </tr>
                     </table>
                   </td>                  
-                  <td align="right" class="logo">
+                  <td align="right" class="logo desctop">
                     <img width="24px" heigth='25px' alt="logo" src="https://test-email6786798.000webhostapp.com/img/logo.png" style="max-width:24px;height:auto;"/>
                   </td>                    
                 </tr>
@@ -348,9 +577,9 @@
           </tr>
           <tr>
             <td bgcolor="#FFFFFF" class="title-td">
-              <table align="center" cellpadding="0" cellspacing="0">
+              <table class="table-580" align="center" cellpadding="0" cellspacing="0">
                 <tr>
-                  <td><img align="center" alt="V" src="https://test-email6786798.000webhostapp.com/img/icons/v.png" style="padding-left: 132px" /></td>
+                  <td align="center"><img class="item" alt="V" src="https://test-email6786798.000webhostapp.com/img/icons/v.png" width="25.5"/></td>
                 </tr>
                 <tr>
                   <td align="center" class="title-inline" style="font-size: 0">
@@ -385,17 +614,18 @@
           </tr>
           <tr>
             <td bgcolor="#FFFFFF">
-              <table align="center" cellpadding="0" cellspacing="0" width="580">
+              <table class="table-580" align="center" cellpadding="0" cellspacing="0" width="580">
                 <tr>
                   <td align=center class="banner-1" style="height:auto;"><img alt="banner-1" src="https://test-email6786798.000webhostapp.com/img/banner.jpg"/></td>
+                  <td align=center class="banner-mobile" style="height:auto;"><img alt="banner-1" src="https://test-email6786798.000webhostapp.com/img/banner-mobile.jpg"/></td>
                 </tr>
               </table>
             </td>
             
           </tr>
           <tr bgcolor="#FFFFFF">
-            <td style="padding-top: 30px">
-              <table align="center" cellpadding="0" cellspacing="0"  width="580">
+            <td class="title-first">
+              <table class="table-580" align="center" cellpadding="0" cellspacing="0"  width="580">
                 <tr>
                   <td>
                     <p align="center" class="header-1" style="font-family:Helvetica, Arial, sans-serif, 'GraphikLCG'">
@@ -408,7 +638,7 @@
           </tr>
           <tr bgcolor="#FFFFFF">
             <td>
-              <table align="center" cellpadding="0" cellspacing="0" width="580">
+              <table class="table-580" align="center" cellpadding="0" cellspacing="0" width="580">
                 <tr>
                   <td align="center" class="description-td">
                     <p style="font-family:Helvetica, Arial, sans-serif">Каждой женщине, которая не боится быть
@@ -422,11 +652,11 @@
           </tr>
           <tr bgcolor="#FFFFFF">
             <td>
-              <table align="center" cellpadding="0" cellspacing="0"  width="580">
+              <table class="table-580" align="center" cellpadding="0" cellspacing="0"  width="580">
                 <tr>
-                  <td class="cta-td">
+                  <td class="cta-td" align=center>
                     <a href="#">
-                      <img align=center alt="cta" src="https://test-email6786798.000webhostapp.com/img/cta.png" />
+                      <img alt="cta" src="https://test-email6786798.000webhostapp.com/img/cta.png" />
                     </a>
                   </td>
                 </tr>
@@ -435,7 +665,7 @@
           </tr>
           <tr bgcolor="#FFFFFF">
             <td>
-              <table class="brend" align="center" cellpadding="0" cellspacing="0" width="580">
+              <table class="brend table-580" align="center" cellpadding="0" cellspacing="0" width="580">
                 <tr>
                   <td align="center" class="subtitle-2">
                     <p style="font-family:Helvetica, Arial, sans-serif">ТЕХНОЛОГИЧЕСКОЕ ДОСТИЖЕНИЕ</p>
@@ -448,8 +678,11 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="banner-2"><img align=center alt="banner-2"
-                      src="https://test-email6786798.000webhostapp.com/img/banner-2.jpg" width="580" style="width:100%;max-width:580px;height:auto;"/></td>
+                  <td class="banner-2">
+                    <img align=center alt="banner-2" src="https://test-email6786798.000webhostapp.com/img/banner-2.jpg" width="280" style="width:100%;max-width:580px;height:auto;"/>
+                  </td>
+                  <td align=center class="banner-mobile-2"><img align=center alt="banner-2"
+                        src="https://test-email6786798.000webhostapp.com/img/banner-mobile-2.jpg" width="580" style="width:100%;max-width:580px;height:auto;"/></td>
                 </tr>
                 <tr>
                   <td align="center" class="description-2">
@@ -462,7 +695,7 @@
           </tr>
           <tr bgcolor="#FFFFFF">
             <td>
-              <table align="center" cellpadding="0" cellspacing="0" width="580">
+              <table class="table-580" align="center" cellpadding="0" cellspacing="0" width="580">
                 <tr>
                   <td class="subtitle-3">
                     <p align="center" style="font-family:Helvetica, Arial, sans-serif">АККОРД ЧИСТОТЫ</p>
@@ -487,36 +720,36 @@
           </tr>
           <tr bgcolor="#FFFFFF">
             <td>
-              <table align="center" cellpadding="0" cellspacing="0"  width="580">
-                <tr align="center">
-                  <td class="block-td">
+              <table class="table-580" align="center" cellpadding="0" cellspacing="0"  width="580">
+                <tr>
+                  <td class="block-td"  width="280">
                     <table align="center" cellpadding="0" cellspacing="0"  width="280">
                       <tr>
-                        <td>
-                          <img alt="img1" src="https://test-email6786798.000webhostapp.com/img/img1.png" style="padding-top: 40px; padding-right: 20px;"/>
-                          <p class="name" align="right" style="font-family:Helvetica, Arial, sans-serif; padding-right: 20px; padding-top: 25px;">ПАРФЮМЕРНАЯ ВОДА</p>
-                          <img align="right" alt="name1" src="https://test-email6786798.000webhostapp.com/img/name1.png" style="padding-top: 9px; padding-right: 20px;" />
-                          <p class="price" align="right" style="padding-right: 14px;display:inline-block; font-family:Helvetica, Arial, sans-serif">6 390 ₽</p>
-                          <img align="right" src="https://test-email6786798.000webhostapp.com/img/old-price.png" alt="old-price" style="display:inline-block; padding-top: 18px; padding-right: 20px; width: 98px;">
-                          <a href="#"><img align="right" alt="link" height="15"
-                            src="https://test-email6786798.000webhostapp.com/img/link.png"
-                            style="padding-top: 8px; padding-right: 20px; padding-bottom: 112px;" width='138' />
+                        <td align="right" class="left">
+                          <img align="center" class="main" width="270" height="270" alt="img1" src="https://test-email6786798.000webhostapp.com/img/img1.png" style="padding-top: 40px;"/>
+                          <p class="name" align="right" style="font-family:Helvetica, Arial, sans-serif;">ПАРФЮМЕРНАЯ ВОДА</p>
+                          <img class="brend-name" align="center" alt="name1" src="https://test-email6786798.000webhostapp.com/img/name1.png" style="padding-top: 9px;" width="247" height="24"/>
+                          <p class="price" align="center" style="padding-right: 14px;display:inline-block; font-family:Helvetica, Arial, sans-serif">6 390 ₽</p>
+                          <img src="https://test-email6786798.000webhostapp.com/img/old-price.png" alt="old-price" style="display:inline-block; padding-top: 18px; width: 98px;">
+                          <a width="280" href="#">
+                            <img align="center" alt="link" height="15" src="https://test-email6786798.000webhostapp.com/img/link.png" style="padding-top: 8px;" width="138" />
+                          </a> 
                         </td>
                       </tr>
                     </table>
                   </td>
-                  <td class="block-td">
-                    <table align="center" cellpadding="0" cellspacing="0" wigth="280">
+                  <td class="block-td"  width="280">
+                    <table align="center" cellpadding="0" cellspacing="0" width="280">
                       <tr>
-                        <td>
-                          <img alt="img2" src="https://test-email6786798.000webhostapp.com/img/img2.png" style="padding-top: 40px; padding-left: 20px;" />
-                          <p class="name" align="left" style="font-family:Helvetica, Arial, sans-serif; padding-left: 20px; padding-top: 25px;">ПАРФЮМЕРНАЯ ВОДА</p>                          
-                          <img align="left" alt="name2" src="https://test-email6786798.000webhostapp.com/img/name2.png" style="padding-top: 9px; padding-left: 20px;" />
-                          <p class="price" align="center" style="padding-left: 20px; display:inline-block; font-family:Helvetica, Arial, sans-serif">3 997 ₽</p>
+                        <td align="left" class="right">
+                          <img align="center" class="main" width="270" height="270" alt="img2" src="https://test-email6786798.000webhostapp.com/img/img2.png" style="padding-top: 40px; " align="center" />
+                          <p class="name" align="left" style="font-family:Helvetica, Arial, sans-serif;">ПАРФЮМЕРНАЯ ВОДА</p>                          
+                          <img class="brend-name" align="center" alt="name2" src="https://test-email6786798.000webhostapp.com/img/name2.png" style="padding-top: 9px; " width="247" height="24"/>
+                          <p class="price" align="center" style=" display:inline-block; font-family:Helvetica, Arial, sans-serif">3 997 ₽</p>
                           <img src="https://test-email6786798.000webhostapp.com/img/old-price1.png" alt="old-price1" style="display:inline-block; padding-top: 12px; padding-left: 14px; width: 98px;">
-                          <a href="#"><img align="left" alt="link" height="15"
-                            src="https://test-email6786798.000webhostapp.com/img/link.png"
-                            style="padding-top: 8px; padding-left: 20px; padding-bottom: 112px;" width='138' /></a>
+                          <a width="280" href="#">
+                            <img align="center" alt="link" height="15" src="https://test-email6786798.000webhostapp.com/img/link.png" style="padding-top: 8px;" width="138" />
+                          </a>
                         </td>
                       </tr>
                     </table>
@@ -527,7 +760,7 @@
           </tr>
           <tr>
             <td bgcolor="#ffffff">
-              <table bgcolor="#FFE9DA" align="center" cellpadding="0" cellspacing="0" width="580">
+              <table class="table-580" bgcolor="#FFE9DA" align="center" cellpadding="0" cellspacing="0" width="580">
                 <tr>
                   <td class="subtitle-4">
                     <p align="center" style="font-family:Helvetica, Arial, sans-serif; padding-top: 28px;">ПРОМОКОД</p>
@@ -539,7 +772,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="description-4">
+                  <td align="center" class="description-4">
                     <p align="center" style="font-family:Helvetica, Arial, sans-serif; padding-top: 6px;">дарим 300 ₽
                       при оформлении заказа от 3000 ₽*<br />
                       без учёта доставки</p>
@@ -569,12 +802,12 @@
           </tr>
           <tr bgcolor="#000000">
             <td>
-              <table align="center" cellpadding="0" cellspacing="0"  width="800">
+              <table class="table-800" align="center" cellpadding="0" cellspacing="0"  width="800">
                 <tr>
                   <td>
-                    <table align="center" cellpadding="0" cellspacing="0"  width="580">
+                    <table class="table-580" align="center" cellpadding="0" cellspacing="0"  width="580">
                       <tr>
-                        <td align="left" class="social">
+                        <td align="left" class="social desc">
                           <table cellpadding="0" cellspacing="0">
                             <tr>
                               <td>
@@ -592,8 +825,47 @@
                             </tr>
                           </table>
                         </td>
-                        <td align=right class="apps">
-                          <table>
+                        <!-- <td class="footer-mobile">
+                          <table cellpadding="0" cellspacing="0"  width="320">
+                            <tr>
+                              <td>
+                                <a href="#"><img alt="f" src="https://test-email6786798.000webhostapp.com/img/icons/f.png" /></a>
+                              </td>
+                              <td>
+                                <a href="#"><img alt="ok" src="https://test-email6786798.000webhostapp.com/img/icons/ok.png" /></a>
+                              </td>
+                              <td>
+                                <a href="#"><img alt="vk" src="https://test-email6786798.000webhostapp.com/img/icons/vk.png" /></a>
+                              </td>
+                              <td>
+                                <a href="#"><img alt="insta" src="https://test-email6786798.000webhostapp.com/img/icons/insta.png" /></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a href="#"><img alt="App-store" src="https://test-email6786798.000webhostapp.com/img/App-store.png" /></a>
+                              </td>
+                              <td>
+                                <a href="#"><img alt="google-play"
+                                    src="https://test-email6786798.000webhostapp.com/img/google-play.png" /></a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center"><p class="info" style="font-family:Helvetica, Arial, sans-serif">Служба поддержки</p>
+                            </tr>
+                            <tr>
+                              <td align="center" class="phone"><a href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">+7 (495) 123-45-67</a></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><a class="info" href="#" style="font-family:Helvetica, Arial, sans-serif">Условия пользовательского соглашения</a></td>
+                            </tr>
+                            <tr>
+                              <td align="center"><a class="info" href="#" style="font-family:Helvetica, Arial, sans-serif">Отписаться от рассылки</a></td>
+                            </tr>
+                          </table>
+                        </td> -->
+                        <td align=right class="apps desc">
+                          <table cellpadding="0" cellspacing="0">
                             <tr>
                               <td>
                                 <a href="#"><img alt="App-store" src="https://test-email6786798.000webhostapp.com/img/App-store.png" /></a>
@@ -607,23 +879,10 @@
                         </td>
                       </tr>
                       <tr>
-                        <td style="padding-top: 32px;">
-                          <table" cellpadding="0" cellspacing="0">
-                            <tr style="padding-bottom: 5px;">
-                              <td align="left">
-                                <table>
-                                  <tr>
-                                    <td class="phone"><a href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">+7 (495) 123-45-67</a></td>                              
-                                  </tr>
-                                </table>
-                              </td>
-                              <td align="right">
-                                <table>
-                                  <tr>                              
-                                    <td align="right"><a class="info" href="#" style="font-family:Helvetica, Arial, sans-serif">Условия пользовательского соглашения</a></td>
-                                  </tr>
-                                </table>
-                              </td>
+                        <td align="left" style="padding-top: 32px;" class="desc">
+                          <table cellpadding="0" cellspacing="0" >
+                            <tr style="padding-bottom: 5px;">                                                           
+                                <td class="phone"><a href="#" style="font-family: Arial, Helvetica, sans-serif, 'GraphikLCG'">+7 (495) 123-45-67</a></td>
                             </tr>
                             <tr>
                               <td style="padding-top: 4px;" align="left">
@@ -632,19 +891,22 @@
                                     <td><p class="info" style="font-family:Helvetica, Arial, sans-serif">Служба поддержки</p>                              
                                   </tr>
                                 </table>
-                              </td>
-                              <td align="right">
-                                <table>
-                                  <tr>                              
-                                    <td align="right"><a class="info" href="#" style="font-family:Helvetica, Arial, sans-serif">Отписаться от рассылки</a></td>
-                                  </tr>
-                                </table>
-                              </td>
+                              </td>                              
+                            </tr>                            
+                          </table>
+                        </td>
+                        <td align="right" style="padding-top: 32px;" class="desc">
+                          <table cellpadding="0" cellspacing="0">
+                            <tr style="padding-bottom: 5px;">
+                              <td align="right"><a class="info" href="#" style="font-family:Helvetica, Arial, sans-serif">Условия пользовательского соглашения</a></td>                              
                             </tr>
-                            <tr bgcolor="#000000" height="48"></tr>
+                            <tr>
+                              <td align="right"><a class="info" href="#" style="font-family:Helvetica, Arial, sans-serif">Отписаться от рассылки</a></td>
+                            </tr>
                           </table>
                         </td>
                       </tr>
+                      <tr bgcolor="#000000" height="48"></tr>
                     </table>
                   </td>
                 </tr>                           
